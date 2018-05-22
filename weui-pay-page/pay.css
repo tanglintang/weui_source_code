@@ -1,0 +1,51 @@
+.page {
+    background: #fff;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.page__hd {
+    text-align: center;
+    margin: 50px auto;
+    margin-bottom: 0;
+    padding: 0;
+}
+
+.page__hd img {
+    width: 50px;
+    height: 50px;
+}
+
+.page__desc {
+    margin-top: 0;
+    font-size: 1.2em;
+    color: #22AD38;
+    text-align: center;
+}
+
+.page__bd {
+    margin-top: 100px;
+    /* text-align: center; */
+}
+
+.page__ft {
+    position: absolute;
+    left: 50%;
+    bottom: 10%;
+    transform: translate(-50%,-50%);
+}
+
+.weui-btn {
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    text-decoration: none;
+    color: #22AD38;
+    line-height: 2;
+    border-radius: 5px;
+}
+
+.weui-btn_primary {
+    width: 200px;
+    border: 1px solid #22AD38;
+}
