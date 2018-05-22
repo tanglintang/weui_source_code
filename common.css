@@ -1,0 +1,92 @@
+/*
+*   author: 唐麟
+*   date: 2018-04-25 
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    /* webkit 浏览器内核 
+        ms 微软浏览器内核
+        在移动端，基本都是 webkit，针对不同的内核
+        使用样式做兼容
+    */
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+}
+
+body, html {
+    height: 100%;
+    /* 手机不同厂商，，做自己的体验，这是有损统一体验的 */
+    /* css 希望所有手机都一样，一张白纸，将厂商的欲望抹平 */
+    /* css reset */
+    /* -webkit-tap-highlight-color: 不规范的属性，按上去就透明，干掉了这种特征 */
+
+    /* 按下高亮效果 (可点击的组件) (默认 transparent透明)     */
+    -webkit-tap-highlight-color: transparent;
+    /* 禁止长按弹出复制文本 */
+    -webkit-user-select: none;
+    user-select: none;
+    /* 禁止唤醒其他菜单 */
+    -webkit-touch-callout: none;
+}
+
+body {
+    line-height: 1.6;
+    font-family: -apple-system-font, Helvetica Neue, Helvetica, sans-serif;
+}
+
+a{
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.page, body {
+    background: #f8f8f8;
+}
+
+/* 页面框架容器 */
+.container {
+    overflow: hidden;
+}
+
+/* 移动端单页 一页显示 */
+.container, .page {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+}
+
+.page {
+    /* 移动端 垂直方向上超出 显示滚动条 可以向下滑屏 */
+    overflow-y: auto;
+    /* 将滚动感知 touch 体验更好 */
+    -webkit-overflow-scrolling: touch;
+    z-index: 1;
+}
+
+.page__hd {
+    padding: 40px;
+}
+
+.page__title {
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.page__desc {
+    margin-top: 5px;
+    color: #888;
+    text-align: left;
+    font-size: 14px;
+}
+
+.page__bd {
+    padding: 0 15px;
+}
